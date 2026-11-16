@@ -20,6 +20,8 @@ int main() {
     return 0;
 }
 
+
+
 ① 7
 ② 9
 ③ 14
