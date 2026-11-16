@@ -1,0 +1,16 @@
+문제 5. 다음 중 구조체 포인터를 사용하여 구조체 멤버에 접근하는 올바른 방법은 무엇인가?
+
+struct Person {
+    int age;
+};
+
+struct Person p1 = {20};
+struct Person *ptr = &p1;
+
+① ptr.age
+
+② ptr->age
+
+③ *ptr.age
+
+④ &ptr.age

@@ -1,0 +1,26 @@
+문제 4. 다음 코드의 실행 결과로 올바른 것은?
+
+#include <stdio.h>
+
+struct Number {
+    int value;
+};
+
+void change(struct Number *n) {
+    n->value = n->value * 2;
+}
+
+int main() {
+    struct Number num = {7};
+
+    change(&num);
+
+    printf("%d", num.value);
+
+    return 0;
+}
+
+① 7
+② 9
+③ 14
+④ 21

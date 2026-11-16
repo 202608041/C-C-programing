@@ -1,0 +1,28 @@
+문제 2. 다음 코드의 실행 결과로 올바른 것은?
+
+#include <stdio.h>
+
+struct Point {
+    int x;
+    int y;
+};
+
+void movePoint(struct Point p) {
+    p.x = 10;
+    p.y = 20;
+}
+
+int main() {
+    struct Point p1 = {3, 5};
+
+    movePoint(p1);
+
+    printf("%d %d", p1.x, p1.y);
+
+    return 0;
+}
+
+① 10 20
+② 3 5
+③ 10 5
+④ 3 20

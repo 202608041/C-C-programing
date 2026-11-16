@@ -1,0 +1,26 @@
+문제 3. 다음 코드의 실행 결과로 올바른 것은?
+
+#include <stdio.h>
+
+struct Book {
+    int price;
+};
+
+void discount(struct Book *b) {
+    b->price -= 3000;
+}
+
+int main() {
+    struct Book b1 = {15000};
+
+    discount(&b1);
+
+    printf("%d", b1.price);
+
+    return 0;
+}
+
+① 15000
+② 12000
+③ 3000
+④ 18000
