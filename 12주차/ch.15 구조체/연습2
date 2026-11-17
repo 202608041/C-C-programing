@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void) {
+    char name[21] = "Yejun";
+    int age = 12;
+    char friendName[21];
+    int friendAge;
+    scanf("%20s %d", friendName, &friendAge);
+    printf("Your name: %s, age: %d\n", name, age);
+    printf("Friend's name: %s, age: %d", friendName, friendAge);
+    return 0;
+}
