@@ -14,3 +14,17 @@ void print_reverse(char *s)
     puts("");
     
 }
+
+int main(void)
+{
+    char str[100];
+
+    printf("문자열 입력: ");
+    scanf("99s", str);
+
+    printf("문자열 역순 출력: ");
+    print_reverse(str);
+
+    return 0;
+}
+
